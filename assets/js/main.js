@@ -1,9 +1,10 @@
-document.querySelector('.menu-btn').addEventListener('click', () =>{
-    document.querySelector('.nav-menu').classList.toggle('show');
-})
-document.ready
 
+const hamburger = document.getElementById('hamburger');
+const navUl = document.getElementById('nav_ul');
 
+hamburger.addEventListener('click', () => {
+  navUl.classList.toggle('show');
+});
 
 const ulSquares = document.querySelector('ul.squares');
 
@@ -36,6 +37,7 @@ for ( let i = 0; i < 15; i++ ) {
   ulSquares.appendChild(li);
 }
 
+// acordion icon active 
 
   const questions = document.querySelectorAll(".question")
   questions.forEach((question) => question.addEventListener("click", () =>{
